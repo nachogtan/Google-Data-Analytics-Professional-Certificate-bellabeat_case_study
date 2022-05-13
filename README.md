@@ -20,7 +20,7 @@ Display Network to support campaigns around key marketing dates.
 To answer the key business questions, I will follow the steps of the
 data analysis process proposed by Google: <b>ask, prepare, process, analyze, share and act.</b>
 
-## ASK
+## Ask
 
 
 
