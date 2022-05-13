@@ -21,6 +21,10 @@ To answer the key business questions, I will follow the steps of the
 data analysis process proposed by Google: <b>ask, prepare, process, analyze, share and act.</b>
 
 ## Ask
-
+Bellabeat Key stackeholders:
+* Urška Sršen: Bellabeat’s cofounder and Chief Creative Officer.
+* Sando Mur: Mathematician and Bellabeat’s cofounder; key member of the Bellabeat executive team.
+* Bellabeat marketing analytics team: A team of data analysts responsible for collecting, analyzing, and
+reporting data that helps guide Bellabeat’s marketing strategy.
 
 
