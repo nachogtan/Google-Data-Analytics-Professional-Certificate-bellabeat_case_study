@@ -28,6 +28,9 @@ data analysis process proposed by Google: <b>ask, prepare, process, analyze, sha
 reporting data that helps guide Bellabeat’s marketing strategy.
 
 Sršen asks you to analyze smart device usage data in order to gain insight into how consumers use non-Bellabeat smart
-devices. To do that she encourages you to use public data that explores smart device users’ daily habits. To do that she encourages you to use public data that explores smart device users’ daily habits and then apply those findings in one bellabeat product in particular.
+devices. To do that she encourages you to use public data that explores smart device users’ daily habits and then apply those findings in one bellabeat product in particular.
+
+## Prepare
+
 
 
