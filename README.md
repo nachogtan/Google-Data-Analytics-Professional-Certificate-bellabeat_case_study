@@ -41,7 +41,7 @@ The Kaggle dataset, [FitBit Fitness Tracker Data](https://www.kaggle.com/dataset
 The ideal data source should be <b>ROCCC</b>, which stands for Reliable, Original, Comprehensive, Current, and Cited. In this particular case:
 * It is <b>not Reliable</b>, because the sample size is small and it is not representative of the population.
 * It is <b>not Original</b> because it is provided by a third party. In this case Amazon Mechanical Turk.
-* It <b>is Comprehensive</b> because it includes the right information to understand smart watch users. 
+* It <b>is Comprehensive</b> because it includes the right information and parameters to understand smart watch users. 
 * It <b>is not Current</b>. The survey ranges from 03.12.2016 to 05.12.2016, which makes it out of date.
 * It's <b>not well Cited</b>. Missing key information about data providers, how they do the survey, etc.
 
