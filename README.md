@@ -4,7 +4,7 @@
 
 
 ## Scenario
-In this case, I'm a junior data analyst working on the marketing analyst team at Bellabeat, a high-tech manufacturer of women's health-focused products.
+In this case, I'm a junior data analyst working on the marketing analyst team at <b>Bellabeat, a high-tech manufacturer of women's health-focused products</b>.
 Bellabeat is a successful small, but high-tech, company that makes smart health-focused products. With their products they intend to become a more larger player in the
 global market for smart devices.
 Collecting data on activity, sleep, stress, and reproductive health has allowed Bellabeat to empower women with
@@ -45,4 +45,8 @@ The ideal data source should be <b>ROCCC</b>, which stands for Reliable, Origina
 * It <b>is not Current</b>. The survey ranges from 03/12/2016 to 05/12/2016, which makes it out of date.
 * It's <b>not well Cited</b>. Missing key information about data providers, how they do the survey, etc.
 
+Sršen have told us that this data set might have some limitations, and encourages us to consider adding another data to help
+address those limitations as we begin to work more with this data.
+
+## Process
 
