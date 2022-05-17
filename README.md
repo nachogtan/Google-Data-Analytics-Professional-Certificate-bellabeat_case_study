@@ -62,8 +62,15 @@ SELECT *
 FROM dailyActivity_merged
 `
 
-<b>3.</b> Check how many different ID's. 
+`sp_help dailyActivity_merged`
 
-`SELECT id
-FROM dailyActivity_merged
-GROUP BY id`
+<b>3.</b> We make a copy of the original table and start reasigning datatypes.
+
+`SELECT * INTO dailyActivity_merged_cpy FROM dailyActivity_merged`
+
+`ALTER TABLE dailyActivity_merged_cpy ALTER COLUMN ActivityDate date`
+`ALTER TABLE dailyActivity_merged_cpy ALTER COLUMN TotalSteps int`
+
+
+
+<b>3.</b>
