@@ -54,9 +54,16 @@ This step focuses on formatting, cleaning, and preparing the data for proper ana
 * Data has been sorted, filtered, and formated for analysis. I have focus on remove, duplicates and unnecesary information, check data types, remove outliers, find and fix structurals errors, handle missing data, and data validation.
 
 <b>1.</b> First of all, we create a new database and import all the files into SQL Server.
+
 <b>2.</b> We do a quick SELECT statement to inspect tables.
 
 `
 SELECT *
 FROM dailyActivity_merged
 `
+
+<b>3.</b> Check how many different ID's. 
+
+`SELECT id
+FROM dailyActivity_merged
+GROUP BY id`
