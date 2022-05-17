@@ -49,4 +49,6 @@ Sršen have told us that this data set might have some limitations, and encourag
 address those limitations as we begin to work more with this data.
 
 ## Process
-
+This step focuses on formatting, cleaning, and preparing the data for proper analysis. We try to reduce data redundancy to minimize future analytic errors and ensure integrity.
+* The tools chosen for this case are "Microsoft SQL Server", "Excel" and "Tableau".
+* Data has been sorted, filtered, and formated for analysis. I have focus on remove, duplicates and unnecesary information, check data types, remove outliers, find and fix structurals errors, handle missing data, and data validation.
