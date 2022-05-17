@@ -52,3 +52,11 @@ address those limitations as we begin to work more with this data.
 This step focuses on formatting, cleaning, and preparing the data for proper analysis. We try to reduce data redundancy to minimize future analytic errors and ensure integrity.
 * The tools chosen for this case are "Microsoft SQL Server", "Excel" and "Tableau".
 * Data has been sorted, filtered, and formated for analysis. I have focus on remove, duplicates and unnecesary information, check data types, remove outliers, find and fix structurals errors, handle missing data, and data validation.
+
+<b>1.</b> First of all, we create a new database and import all the files into SQL Server.
+<b>2.</b> We do a quick SELECT statement to inspect tables.
+
+`
+SELECT *
+FROM dailyActivity_merged
+`
