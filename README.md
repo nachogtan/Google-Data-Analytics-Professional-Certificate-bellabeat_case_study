@@ -71,6 +71,17 @@ FROM dailyActivity_merged
 `ALTER TABLE dailyActivity_merged_cpy ALTER COLUMN ActivityDate date`
 `ALTER TABLE dailyActivity_merged_cpy ALTER COLUMN TotalSteps int`
 
+All the columns have been converted and the final result is as follows...
 
+![bellabeat_structure](https://user-images.githubusercontent.com/98779367/168878509-f52a1b4a-b235-49ad-bd3c-aa9ac3445d8f.jpg)
+
+Note that the LoggedActivitiesDistance and SedentaryActiveDistance columns were removed because they contained most values set to <b>0</b>.
+
+`ALTER TABLE dailyActivity_merged_cpy DROP COLUMN LoggedActivitiesDistance --908 0f 904 rows had values = 0`
+`ALTER TABLE dailyActivity_merged_cpy DROP COLUMN SedentaryActiveDistance --858 of 904 rows had values = 0`
+
+TotalDistance and TrackerDistance are <b>duplicate columns</b> so I droped one.
+
+`ALTER TABLE dailyActivity_merged_cpy DROP COLUMN TrackerDistance`
 
 <b>3.</b>
