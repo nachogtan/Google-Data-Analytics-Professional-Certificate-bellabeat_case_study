@@ -2,6 +2,14 @@
 
 ![índice](https://user-images.githubusercontent.com/98779367/168304972-6ef68f87-f6e4-47ba-a97c-9716af2a0530.png)
 
+## Table of contents
+  ### Scenario
+  ### Ask
+  ### Prpepare
+  ### Proces
+  ### Analyze
+  ### Share
+  ### Act
 
 ## Scenario
 In this case, I'm a junior data analyst working on the marketing analyst team at <b>Bellabeat, a high-tech manufacturer of women's health-focused products</b>.
@@ -110,3 +118,11 @@ So far, the data has been formatted and prepared for further analysis. As a resu
 
 
 ## Analyze
+In this step, we use some SQL functions that help us determine key information about smartwatch users.
+
+We use AVG() to determine average, steps, calories, distance, active-minutes, seddentary-minutes, etc...
+
+`SELECT AVG(TotalSteps) AS avg_steps
+FROM dailyActivity_merged_cpy
+WHERE Day_of_week = ''`
+
