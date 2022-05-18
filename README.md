@@ -53,9 +53,9 @@ This step focuses on formatting, cleaning, and preparing the data for proper ana
 * The tools chosen for this case are "Microsoft SQL Server", "Excel" and "Tableau".
 * Data has been sorted, filtered, and formated for analysis. I have focus on remove, duplicates and unnecesary information, check data types, remove outliers, find and fix structurals errors, handle missing data, and data validation.
 
-<b>1.</b> First of all, we create a new database and import all the files into SQL Server.
+### <b>1.</b> First of all, we create a new database and import all the files into SQL Server.
 
-<b>2.</b> We do a quick SELECT statement to inspect tables.
+### <b>2.</b> We do a quick SELECT statement to inspect tables.
 
 `
 SELECT *
@@ -64,7 +64,7 @@ FROM dailyActivity_merged
 
 `sp_help dailyActivity_merged`
 
-<b>3.</b> We make a copy of the original table and start reasigning datatypes.
+### <b>3.</b> We make a copy of the original table and start reasigning datatypes.
 
 `SELECT * INTO dailyActivity_merged_cpy FROM dailyActivity_merged`
 
@@ -78,10 +78,35 @@ All the columns have been converted and the final result is as follows...
 Note that the LoggedActivitiesDistance and SedentaryActiveDistance columns were removed because they contained most values set to <b>0</b>.
 
 `ALTER TABLE dailyActivity_merged_cpy DROP COLUMN LoggedActivitiesDistance --908 0f 904 rows had values = 0`
+
 `ALTER TABLE dailyActivity_merged_cpy DROP COLUMN SedentaryActiveDistance --858 of 904 rows had values = 0`
 
 TotalDistance and TrackerDistance are <b>duplicate columns</b> so I droped one.
 
 `ALTER TABLE dailyActivity_merged_cpy DROP COLUMN TrackerDistance`
 
-<b>3.</b>
+### <b>4.</b> I used DISTINCT to count unique ID's.
+
+`SELECT DISTINCT(id)
+FROM dailyActivity_merged_cpy`
+
+### <b>5.</b> Chek for missing data or blanks.
+
+`SELECT ActivityDate
+FROM dailyActivity_merged_cpy
+WHERE ActivityDate IS NULL or ActivityDate = ''`
+
+### <b>6.</b> Create a new column to store weekday.
+
+`ALTER TABLE dailyActivity_merged_cpy ADD Day_of_week varchar(20)`
+
+`UPDATE dailyActivity_merged_cpy
+SET Day_of_week = DATENAME(weekday, ActivityDate)
+FROM dailyActivity_merged_cpy`
+
+
+So far, the data has been formatted and prepared for further analysis. As a result we got a table with <b>13 columns and 940 rows</b>. 
+<br>Sorting and filtering has shown us that the <b>unique IDs are 33</b> instead of 30 as stated in the data source.
+
+
+## Analyze
