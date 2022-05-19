@@ -2,15 +2,6 @@
 
 ![índice](https://user-images.githubusercontent.com/98779367/168304972-6ef68f87-f6e4-47ba-a97c-9716af2a0530.png)
 
-## Table of contents
-  ### Scenario
-  ### Ask
-  ### Prpepare
-  ### Proces
-  ### Analyze
-  ### Share
-  ### Act
-
 ## Scenario
 In this case, I'm a junior data analyst working on the marketing analyst team at <b>Bellabeat, a high-tech manufacturer of women's health-focused products</b>.
 Bellabeat is a successful small, but high-tech, company that makes smart health-focused products. With their products they intend to become a more larger player in the
@@ -125,4 +116,11 @@ We use AVG() to determine average, steps, calories, distance, active-minutes, se
 `SELECT AVG(TotalSteps) AS avg_steps
 FROM dailyActivity_merged_cpy
 WHERE Day_of_week = ''`
+
+## Share
+Analysis has shown us that:
+
+-On average, users recorded 7637 steps or 5.4 km.
+-Average Calories was 2303.
+
 
