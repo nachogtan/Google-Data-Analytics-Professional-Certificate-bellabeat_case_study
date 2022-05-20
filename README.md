@@ -126,14 +126,19 @@ WHERE Day_of_week = ''`
 
 ## Share
 Analysis has shown us that:
+<br>-Tuesday, Wednesday, and Thursday are the days when most users track their activity, the rest of the week shows adecrease in activity, including weekends.
+
+<img src="https://user-images.githubusercontent.com/98779367/169515571-487de334-19c7-485e-805d-303473ea4562.jpg" width="500" height="300">
+
 
 -<b>81% of registered activity corresponds to Sedentary</b>.
+<br>-LightlyActiveMinutes represents a 16%, followed by a 2% VeryActiveMInutes and only 1% of FairlyActiveMinutes.
 
 <img src="https://user-images.githubusercontent.com/98779367/169510253-bb9e25d4-0d55-4f90-ba37-2b573a900376.jpg" width="500" height="300">
 
 -On average, users recorded <b>7637 steps or 5.4 km</b>.
 <br>-Average Calories was <b>2303</b>.
-<br>-As is easy to guess, there is some <b>correlation between calories burned and the number of steps taken</b>.
+<br>-A <b>correlation as been found between calories burned and the number of steps taken</b>.
 
 
 <img src="https://user-images.githubusercontent.com/98779367/169500661-f4f7bf05-713e-4f99-b4c3-af7c3012ae7a.jpg" width="500" height="300">
@@ -141,3 +146,8 @@ Analysis has shown us that:
 
 <img src="https://user-images.githubusercontent.com/98779367/169501515-bb0add25-83a8-4467-9de7-3b49a7aa0a38.jpg" width="500" height="300">
 
+-Again, we can see the correlation between steps taken and calories burned.
+<br>The hot zones of the scaterplot shows that <b>most activity happens between the range of 0 and 15000 steps</b>.
+<br>-Some outliers have been found that are clearily visible in our graph.
+
+<img src="https://user-images.githubusercontent.com/98779367/169511432-c3c7cde5-66d2-499c-8060-f0c135e35af8.jpg" width="500" height="300">
