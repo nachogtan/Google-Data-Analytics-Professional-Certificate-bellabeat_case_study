@@ -151,3 +151,8 @@ Analysis has shown us that:
 <br>-Some outliers have been found that are clearily visible in our graph.
 
 <img src="https://user-images.githubusercontent.com/98779367/169511432-c3c7cde5-66d2-499c-8060-f0c135e35af8.jpg" width="500" height="300">
+
+### Conclusion: 
+* We have learned that the highest peaks of activity occur between Tuesday, Wednesday and Thursday, beginning to decrease the rest of the week and on weekends.
+* There is a clear correlation between calories burned and steps taken.
+* 
