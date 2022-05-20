@@ -72,7 +72,7 @@ FROM dailyActivity_merged
 
 All the columns have been converted and the final result is as follows...
 
-![bellabeat_structure](https://user-images.githubusercontent.com/98779367/168878509-f52a1b4a-b235-49ad-bd3c-aa9ac3445d8f.jpg)
+<img src="https://user-images.githubusercontent.com/98779367/168878509-f52a1b4a-b235-49ad-bd3c-aa9ac3445d8f.jpg" width="650" height="300">
 
 Note that the LoggedActivitiesDistance and SedentaryActiveDistance columns were removed because they contained most values set to <b>0</b>.
 
@@ -111,6 +111,13 @@ So far, the data has been formatted and prepared for further analysis. As a resu
 ## Analyze
 In this step, we use some SQL functions that help us determine key information about smartwatch users.
 
+The MIN() and MAX() functions will help us explore data and better understand ranges.
+
+`SELECT COUNT(TotalSteps)
+FROM dailyActivity_merged_cpy
+WHERE TotalSteps < 100
+`
+
 We use AVG() to determine average, steps, calories, distance, active-minutes, seddentary-minutes, etc...
 
 `SELECT AVG(TotalSteps) AS avg_steps
@@ -120,7 +127,17 @@ WHERE Day_of_week = ''`
 ## Share
 Analysis has shown us that:
 
--On average, users recorded 7637 steps or 5.4 km.
--Average Calories was 2303.
+-<b>81% of registered activity corresponds to Sedentary</b>.
 
+<img src="https://user-images.githubusercontent.com/98779367/169510253-bb9e25d4-0d55-4f90-ba37-2b573a900376.jpg" width="500" height="300">
+
+-On average, users recorded <b>7637 steps or 5.4 km</b>.
+<br>-Average Calories was <b>2303</b>.
+<br>-As is easy to guess, there is some <b>correlation between calories burned and the number of steps taken</b>.
+
+
+<img src="https://user-images.githubusercontent.com/98779367/169500661-f4f7bf05-713e-4f99-b4c3-af7c3012ae7a.jpg" width="500" height="300">
+
+
+<img src="https://user-images.githubusercontent.com/98779367/169501515-bb0add25-83a8-4467-9de7-3b49a7aa0a38.jpg" width="500" height="300">
 
