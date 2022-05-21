@@ -24,9 +24,9 @@ This first step focuses on having a clear understanding of the business task and
 We ask ourselves questions?. What we are trying to understand?. How we can use available information to make informed business decisions?.
 
 <b>Business task and key stakeholders:</b>
-* Urška Sršen: Bellabeat’s cofounder and Chief Creative Officer.
-* Sando Mur: Mathematician and Bellabeat’s cofounder; key member of the Bellabeat executive team.
-* Bellabeat marketing analytics team: A team of data analysts responsible for collecting, analyzing, and
+* <b>Urška Sršen</b>: Bellabeat’s cofounder and Chief Creative Officer.
+* <b>Sando Mur</b>: Mathematician and Bellabeat’s cofounder; key member of the Bellabeat executive team.
+* <b>Bellabeat marketing analytics team</b>: A team of data analysts responsible for collecting, analyzing, and
 reporting data that helps guide Bellabeat’s marketing strategy.
 
 Sršen asks you to analyze smart device usage data in order to gain insight into how consumers use non-Bellabeat smart
@@ -40,7 +40,7 @@ The Kaggle dataset, [FitBit Fitness Tracker Data](https://www.kaggle.com/dataset
 The ideal data source should be <b>ROCCC</b>, which stands for Reliable, Original, Comprehensive, Current, and Cited. In this particular case:
 * It is <b>not Reliable</b>, because the sample size is small and it is not representative of the population.
 * It is <b>not Original</b> because it is provided by a third party. In this case Amazon Mechanical Turk.
-* It <b>is Comprehensive</b> because it includes the right information and parameters to understand smart watch users. 
+* It <b>is fairly Comprehensive</b> because it includes the right information and parameters to understand smart watch users. 
 * It <b>is not Current</b>. The survey ranges from 03/12/2016 to 05/12/2016, which makes it out of date.
 * It's <b>not well Cited</b>. Missing key information about data providers, how they do the survey, etc.
 
@@ -184,7 +184,8 @@ Focusing on collecting reliable and clear data will be crucial to obtaining obje
 I would choose to apply this insights to the "Time" product. Because is one of the most used wearables, is easy to collect more information to undertand useres needs. 
 
 <b>1. Focus on creating a reliable database through the Bellabeat app. Since Bellabeat products are heavily focused on women, it would be better to know about the bellabeat app itself. Other smartwatch manufacturers may collect user information that is not necessarily focused on bellabeat's target customers.
-<b>2. We learned from the data that many users lead sedentary lives. In the data we learned that the activity decreases towards the weekends, so it would be good to encourage customers about the importance of a well-distributed activity throughout the week.
-<b>3. Keeping a good track of vital signs would be very important. Know blood pressure, oxygen concentration, pulse, etc. it is really important to understand users needs and give them an even more personalized experience.
 
-<b>3.  
+<br><b>2. We learned from the data that many users lead sedentary lives. In the data we learned that the activity decreases towards the weekends, so it would be good to encourage customers about the importance of a well-distributed activity throughout the week.
+
+<br><b>3. Keeping a good track of vital signs would be very important. Know blood pressure, oxygen concentration, pulse, etc. it is really important to understand users needs and give them an even more personalized experience.
+ 
