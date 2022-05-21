@@ -118,7 +118,21 @@ FROM dailyActivity_merged_cpy
 WHERE TotalSteps < 100
 `
 
+<br>-<b>Check for outliers</b>.
+
+`SELECT COUNT(TotalSteps)
+FROM dailyActivity_merged_cpy
+WHERE TotalSteps > 15000`
+
+`SELECT COUNT(TotalSteps)
+FROM dailyActivity_merged_cpy
+WHERE TotalSteps BETWEEN 0 AND 15000`
+
 We use AVG() to determine average, steps, calories, distance, active-minutes, seddentary-minutes, etc...
+
+<img src="https://user-images.githubusercontent.com/98779367/169650193-ca63553f-7cbf-4dbe-b60b-64886c7b3858.jpg" width="300" height="250">
+
+-<b>Looking for empty or NULLS.</b>
 
 `SELECT AVG(TotalSteps) AS avg_steps
 FROM dailyActivity_merged_cpy
@@ -126,7 +140,7 @@ WHERE Day_of_week = ''`
 
 ## Share
 Analysis has shown us that:
-<br>-Tuesday, Wednesday, and Thursday are the days when most users track their activity, the rest of the week shows adecrease in activity, including weekends.
+<br>-Tuesday, Wednesday, and Thursday are the days when most users track their activity, the rest of the week shows a decrease in activity, including weekends.
 
 <img src="https://user-images.githubusercontent.com/98779367/169515571-487de334-19c7-485e-805d-303473ea4562.jpg" width="500" height="300">
 
@@ -152,7 +166,25 @@ Analysis has shown us that:
 
 <img src="https://user-images.githubusercontent.com/98779367/169511432-c3c7cde5-66d2-499c-8060-f0c135e35af8.jpg" width="500" height="300">
 
-### Conclusion: 
-* We have learned that the highest peaks of activity occur between Tuesday, Wednesday and Thursday, beginning to decrease the rest of the week and on weekends.
-* There is a clear correlation between calories burned and steps taken.
-* 
+-The <b>highest peaks in calories burned occur between 12 noon and 7 p.m</b>.
+
+<img src="https://user-images.githubusercontent.com/98779367/169647702-7e8e85b0-5503-4f5b-ba68-d7fa7833b269.jpg" width="500" height="300">
+
+### Conclusions: 
+The unreliability of this data set calls for caution. All of these conclusions need to be double-checked and confirmed with further analysis of a more complete and reliable data set.
+
+* <b>We have learned that the highest peaks of activity occur between Tuesday, Wednesday and Thursday, beginning to decrease the rest of the week and on weekends.</b>
+* <b>There is a clear correlation between calories burned and steps taken.</b>
+* <b>Sedentary represents 81% of the total minutes recorded.</b>
+* <b>Highest peaks in calories burned occur between 12 noon and 7 p.m.</b>
+* <b>In general, the data set is not reliable. It does not provide us with crucial information to understand user habits, such as age or weight. Without this information, we can't be sure what proportion use smartwatches to track vital signs on a daily basis, or which ones uses to plan a physical activity like sports.
+Focusing on collecting reliable and clear data will be crucial to obtaining objective information from customers.</b>
+
+### My recommendations:
+I would choose to apply this insights to the "Time" product. Because is one of the most used wearables, is easy to collect more information to undertand useres needs. 
+
+<b>1. Focus on creating a reliable database through the Bellabeat app. Since Bellabeat products are heavily focused on women, it would be better to know about the bellabeat app itself. Other smartwatch manufacturers may collect user information that is not necessarily focused on bellabeat's target customers.
+<b>2. We learned from the data that many users lead sedentary lives. In the data we learned that the activity decreases towards the weekends, so it would be good to encourage customers about the importance of a well-distributed activity throughout the week.
+<b>3. Keeping a good track of vital signs would be very important. Know blood pressure, oxygen concentration, pulse, etc. it is really important to understand users needs and give them an even more personalized experience.
+
+<b>3.  
